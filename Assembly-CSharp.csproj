@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A07FB121-C180-20A6-8599-9D5A782D9374}</ProjectGuid>
+    <ProjectGuid>{39EB3231-7C13-2403-0FF9-A380078A1B96}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Carrossel.cs" />
      <Compile Include="Assets\Scripts\Diretor.cs" />
      <Compile Include="Assets\Scripts\GeradorDeObstaculos.cs" />
+     <Compile Include="Assets\Scripts\InterfaceGameOver.cs" />
      <Compile Include="Assets\Scripts\MaoPiscando.cs" />
      <Compile Include="Assets\Scripts\Obstaculo.cs" />
      <Compile Include="Assets\Scripts\Pontuacao.cs" />

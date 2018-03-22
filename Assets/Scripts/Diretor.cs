@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Diretor : MonoBehaviour {
-    [SerializeField]
-    private GameObject imagemGameOver;
+    
     private Aviao aviao;
     private Pontuacao pontucao;
+    private InterfaceGameOver interfaceGameOver;
 
 
 
@@ -14,19 +14,22 @@ public class Diretor : MonoBehaviour {
     {
         this.aviao = GameObject.FindObjectOfType<Aviao>();
         this.pontucao = GameObject.FindObjectOfType<Pontuacao>();
+        this.interfaceGameOver = GameObject.FindObjectOfType<InterfaceGameOver>();
  
     }
 
     public void FinalizarJogo()
     {
         Time.timeScale = 0;
-        //habilitar a imagem de Game Over
-        this.imagemGameOver.SetActive(true);
+        
+        this.pontucao.SalvarRecorde();
+        this.interfaceGameOver.MostrarInterface();
+
     }
 
     public void ReiniciarJogo()
     {
-        this.imagemGameOver.SetActive(false);
+        this.interfaceGameOver.EsconderInterface();
         Time.timeScale = 1;
         this.aviao.Reiniciar();
         this.DestruirObstaculos();

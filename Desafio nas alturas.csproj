@@ -286,6 +286,7 @@
     <Compile Include="Assets\Scripts\Carrossel.cs" />
     <Compile Include="Assets\Scripts\Diretor.cs" />
     <Compile Include="Assets\Scripts\GeradorDeObstaculos.cs" />
+    <Compile Include="Assets\Scripts\InterfaceGameOver.cs" />
     <Compile Include="Assets\Scripts\MaoPiscando.cs" />
     <Compile Include="Assets\Scripts\Obstaculo.cs" />
     <Compile Include="Assets\Scripts\Pontuacao.cs" />
