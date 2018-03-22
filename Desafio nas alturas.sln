@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio nas alturas", "Desafio nas alturas.csproj", "{9CF3F110-D43B-D0F3-7EEE-5DCB2FF85EC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CF3F110-D43B-D0F3-7EEE-5DCB2FF85EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF3F110-D43B-D0F3-7EEE-5DCB2FF85EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF3F110-D43B-D0F3-7EEE-5DCB2FF85EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF3F110-D43B-D0F3-7EEE-5DCB2FF85EC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
