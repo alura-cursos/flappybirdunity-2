@@ -8,7 +8,9 @@ public class Aviao : MonoBehaviour {
     private float forca;
     private Diretor diretor;
     private Vector3 posicaoInicial;
-    
+    private bool deveImpulsionar;
+
+
 
     private void Awake()
     {
@@ -24,10 +26,19 @@ public class Aviao : MonoBehaviour {
     private void Update () {
         if (Input.GetButtonDown("Fire1"))
         {
-            this.Impulsionar();
+            this.deveImpulsionar = true;
         }
 		
 	}
+
+    private void FixedUpdate()
+    {
+        if(this.deveImpulsionar)
+        {
+            this.Impulsionar();
+        }
+        
+    }
 
     public void Reiniciar()
     {
@@ -39,6 +50,7 @@ public class Aviao : MonoBehaviour {
     {
         this.fisica.velocity = Vector2.zero;
         this.fisica.AddForce(Vector2.up * this.forca, ForceMode2D.Impulse);
+        this.deveImpulsionar = false;
     }
 
     private void OnCollisionEnter2D(Collision2D colisao)
