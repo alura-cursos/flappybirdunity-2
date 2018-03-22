@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BAB4E63C-9065-6BEE-3654-31299F9DFB59}</ProjectGuid>
+    <ProjectGuid>{EC3369D5-E4C8-4226-B4B1-C329F802B80C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,12 +53,14 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Aviao.cs" />
      <Compile Include="Assets\Scripts\Carrossel.cs" />
+     <Compile Include="Assets\Scripts\ControleDeDificuldade.cs" />
      <Compile Include="Assets\Scripts\Diretor.cs" />
      <Compile Include="Assets\Scripts\GeradorDeObstaculos.cs" />
      <Compile Include="Assets\Scripts\InterfaceGameOver.cs" />
      <Compile Include="Assets\Scripts\MaoPiscando.cs" />
      <Compile Include="Assets\Scripts\Obstaculo.cs" />
      <Compile Include="Assets\Scripts\Pontuacao.cs" />
+     <Compile Include="Assets\Scripts\VariavelCompartilhadaFloat.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

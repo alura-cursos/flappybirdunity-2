@@ -140,7 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a29eb3b3f772fc48aa097483a55c166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoParaGerar: 3
+  tempoParaGerarFacil: 5
+  tempoParaGerarDificil: 1
   manualDeIntrucoes: {fileID: 1543252294991026, guid: a9f00ac208c98e047ba14e3ed315ae2b,
     type: 2}
 --- !u!4 &32435807
@@ -367,7 +368,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b173a028cf7e9c74f8284be80bb4fa6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -775,6 +776,47 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 354129746}
+--- !u!1 &466407836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 466407838}
+  - component: {fileID: 466407837}
+  m_Layer: 0
+  m_Name: ControleDificuldade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &466407837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466407836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa9042c5876b2c429fb643fc5911d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoParaDicifuldadeMaxima: 50
+--- !u!4 &466407838
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466407836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.505537, y: 1.9722668, z: 0.1484375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &660878384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb8bcf3542facb45bbda7735ab4db10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 2.5
+  velocidade: {fileID: 11400000, guid: 1b2b3e7f16b54064298597cafec96d62, type: 2}
 --- !u!212 &1391648125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1263,7 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb8bcf3542facb45bbda7735ab4db10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 2.5
+  velocidade: {fileID: 11400000, guid: 1b2b3e7f16b54064298597cafec96d62, type: 2}
 --- !u!1 &1555942986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,7 +1509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb8bcf3542facb45bbda7735ab4db10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
+  velocidade: {fileID: 11400000, guid: 4243e49cf7729e04483a07f601456adc, type: 2}
 --- !u!1 &1717727109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5336,7 +5378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb8bcf3542facb45bbda7735ab4db10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
+  velocidade: {fileID: 11400000, guid: 4243e49cf7729e04483a07f601456adc, type: 2}
 --- !u!212 &2121035111
 SpriteRenderer:
   m_ObjectHideFlags: 0
