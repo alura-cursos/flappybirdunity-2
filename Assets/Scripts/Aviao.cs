@@ -9,6 +9,7 @@ public class Aviao : MonoBehaviour {
     private Diretor diretor;
     private Vector3 posicaoInicial;
     private bool deveImpulsionar;
+    private Animator animacao;
 
 
 
@@ -16,6 +17,7 @@ public class Aviao : MonoBehaviour {
     {
         this.posicaoInicial = this.transform.position;
         this.fisica = this.GetComponent<Rigidbody2D>();
+        this.animacao = this.GetComponent<Animator>();
     }
 
     private void Start()
@@ -28,7 +30,7 @@ public class Aviao : MonoBehaviour {
         {
             this.deveImpulsionar = true;
         }
-		
+        this.animacao.SetFloat("VelocidadeY", this.fisica.velocity.y);
 	}
 
     private void FixedUpdate()

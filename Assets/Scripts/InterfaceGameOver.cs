@@ -8,6 +8,22 @@ public class InterfaceGameOver : MonoBehaviour {
     private GameObject imagemGameOver;
     [SerializeField]
     private Text valorRecorde;
+    [SerializeField]
+    private Image posicaoMedalha;
+    [SerializeField]
+    private Sprite medalhaOuro;
+    [SerializeField]
+    private Sprite medalhaPrata;
+    [SerializeField]
+    private Sprite medalhaBronze;
+
+    private Pontuacao pontuacao;
+    private int recorde;
+
+    private void Start()
+    {
+        this.pontuacao = GameObject.FindObjectOfType<Pontuacao>();
+    }
 
     public void MostrarInterface()
     {
@@ -22,8 +38,27 @@ public class InterfaceGameOver : MonoBehaviour {
 
     private void AtualizarInterfaceGrafica()
     {
-        int recorde = PlayerPrefs.GetInt("recorde");
+        this.recorde = PlayerPrefs.GetInt("recorde");
         this.valorRecorde.text = recorde.ToString();
+
+        this.VerificarCorMeldalha();
     }
 
+    private void VerificarCorMeldalha()
+    {
+        if (this.pontuacao.Pontos > this.recorde - 2)
+        {
+            //medalha de ouro
+            this.posicaoMedalha.sprite = this.medalhaOuro;
+        } else if (this.pontuacao.Pontos > this.recorde/2)
+        {
+            //medalha de prata
+            this.posicaoMedalha.sprite = this.medalhaPrata;
+        }
+        else
+        {
+            //medalha de bronze
+            this.posicaoMedalha.sprite = this.medalhaBronze;
+        }
+    }
 }

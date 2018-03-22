@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdb6601619fe774eb25160eff32108b, type: 3}
   m_Name: VelocidadePiso
   m_EditorClassIdentifier: 
-  valor: 18
+  valor: 5
